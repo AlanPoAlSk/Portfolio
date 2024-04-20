@@ -5,7 +5,13 @@
   text-align: center;
 }
 
-.logo {
+body {
+  background-image: url('/src/assets/50562-460509458_medium.mp4');
+  background-size: cover;
+  /* Add other background properties as needed */
+}
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +45,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
