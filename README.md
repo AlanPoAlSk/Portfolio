@@ -1,3 +1,1 @@
-# React + Vite
-
-## Portfolio setup
+# Portfolio setup
