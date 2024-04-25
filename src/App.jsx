@@ -19,7 +19,6 @@ function App() {
     <>
     {/* <div className="logo"> <img src="src/assets/logo_as.png" alt="Logo" />  </div> */}
     <div className="portfolio-page">
-      {/* <div className="blurry-background"></div> */}
         <div className="content-wrapper">
           <NavigationSidebar activeSection={activeSection} onSectionClick={handleSectionClick} />
           <div className={`${activeSection ? 'content' : ''}`}>
