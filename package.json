@@ -1,7 +1,7 @@
 {
   "homepage": "https://alanpoalsk.github.io/Portfolio/",
   "name": "my_portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
