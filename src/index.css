@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-family:cursive;
   font-size: 2em;
-  color: whitesmoke;
+  color: black;
   text-align: center;
 }
 
@@ -31,27 +31,25 @@ h3 {
 }
 
 .portfolio-page {
-  margin-top : 30vh;
+  margin-top : 15vh;
   margin-left : 5vh;
   display : flex;
   position: relative;
   width: 100%;
+  height: 75vh;
   z-index: 0;
-  /* height: 100vh; */
   overflow: hidden;
 }
 
 .content-wrapper {
   display: flex;
-  width: 150vw;
-  height: 65vh;
-  /* position: relative; */
+  width: 100%;
+  height: 75vh;
   z-index: 1;
 }
 
 .content {
-  padding: 2vh;
-  background-color: rgba(255, 255, 255, 0.775);
+  background-color: rgba(255, 255, 255, 0.882);
   color: black;
   backdrop-filter: blur(1px); 
   border-radius: 10px; 
@@ -59,7 +57,7 @@ h3 {
   width: 40%;
   display : flex;
   justify-content : center;
-  border: 2px solid white;
+  border: 2px solid #0f0;
 }
 
 li {
@@ -82,14 +80,13 @@ li.active {
 }
 
 .logo {
-  /* position: fixed;
-  top: -5vw;
-  left: -13vw; */
-  height: 3vh;
-  /* transform: translateX(-27%); */
-   /* Ensure logo is above other content */
+  position: absolute; 
+  top: 5%; 
+  left: 10%; 
+  transform: translateX(-50%); 
+  z-index: 1; 
+  width: 15%; 
 }
-
 
 .text {
   overflow-y: auto;
@@ -99,14 +96,63 @@ li.active {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.text1 {
+  overflow-y: auto;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #0f0; 
+}
+
 .contacts {
-  margin-left: 20vw;
-  transform: scale(1.411);
+  transform: scale(1.311);
+  text-align: center;
 }
 
 .contact-section {
-  transform: scale(0.9); /* Adjust the scale factor as needed */
-  transition: transform 0.8s ease; /* Add a transition for smooth scaling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: relative;
+}
+
+.resume {
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume h2 {
+  color: green;
+}
+
+.resume-section {
+  transform: scale(1); 
+  transition: transform 0.8s ease;
+  position: relative;
+  background-color: #000;
+}
+
+.embed-container {
+  position: relative;
+}
+
+.embed-container iframe {
+  margin-top: 4vh;
+  margin-left: 0.9vw;
+  height: 60vh;
+  width: 38vw;
+  transition: transform 0.8s ease;
+}
+
+.embed-container:hover iframe {
+  transform: scale(1.7);
+  width: 100%;
+  border: none;
 }
 
 a {
@@ -119,27 +165,28 @@ a:hover {
 }
 
 .matrix-container {
-  /* position: relative; */
-  width: 100%;
-  height: 60vh;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 40vw;
+  height: 74.5vh;
   overflow: hidden;
   background-color: black;
 }
 
 .matrix-text {
-  font-size: 18px;
-  color: rgb(12, 156, 12);
-  margin-left:10px;
+  font-size: 16px;
+  color: #0f0;
+  margin-top: 40px;
+  margin-left: 20px;
   margin-right: 10px;
   font-family: monospace;
-  line-height: 1.3;
+  line-height: 1.55;
 }
 
 .matrix-text span {
-  animation: fall 7s linear infinite;
+  animation: fall 1s linear infinite;
 }
 
 @keyframes fall {
@@ -153,76 +200,130 @@ a:hover {
   }
 }
 
-.animate-text {
-  opacity: 0;
-  position: relative;
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4vh;
 }
 
-.animate-text p {
-  display: inline-block;
-  opacity: 0;
+.center-image {
+  max-width: 100%;
+  height: 30vh;
+  border-radius: 100px 100px;
 }
 
-.animate-text p a {
-  color: inherit;
-  text-decoration: none;
+.skills-section {
+  width: 100%;
+  background-color: black; 
+  padding: 5px;
 }
 
-.visible {
-  opacity: 1;
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
-.fade-in {
-  animation: fadeIn 2s forwards;
+.logos-container {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.logos .logo-container {
+  margin: 15px;
+  width: 80px; 
+  height: 80px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+}
+
+.logos img {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 10px; 
+  border-radius: 8px; 
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    transform: translateY(-80%);
+    opacity: 0.1;
   }
   to {
-      opacity: 1;
+    transform: translateY(10%);
+    opacity: 1;
   }
 }
 
-/*
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.hidden {
+  display: none;
 }
 
 
-button {
+.project-card {
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: box-shadow 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+.project-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .card-body {
+  padding: 20px;
+}
+
+.project-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  color: #555;
+}
+
+.projects-section {
+  overflow-y: auto; 
+  max-height: 600px; 
+}
+
+.scrollable {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  padding-bottom: 20px; 
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #0056b3;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto; 
+  max-height: 300px; 
+  object-fit: contain; 
+}

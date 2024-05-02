@@ -6,10 +6,11 @@ import NavigationSidebar from "./views/NavigationSidebar";
 import ProjectsSection from "./views/ProjectsSection";
 import ResumeSection from "./views/ResumeSection";
 import ContactSection from "./views/ContactSection";
+import SkillsSection from "./views/Skills";
 
 function App() {
   
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('about');
 
   const handleSectionClick = (section) => {
     setActiveSection(prevSection => prevSection === section ? '' : section);
@@ -17,13 +18,13 @@ function App() {
 
   return (
     <>
-    {/* <div className="logo"> <img src="src/assets/logo_as.png" alt="Logo" />  </div> */}
     <div className="portfolio-page">
         <div className="content-wrapper">
           <NavigationSidebar activeSection={activeSection} onSectionClick={handleSectionClick} />
           <div className={`${activeSection ? 'content' : ''}`}>
             {activeSection === 'about' && <AboutMeSection />}
             {activeSection === 'projects' && <ProjectsSection />}
+            {activeSection === 'skills' && <SkillsSection />}
             {activeSection === 'resume' && <ResumeSection />}
             {activeSection === 'contact' && <ContactSection />}
           </div>
