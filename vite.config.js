@@ -13,5 +13,6 @@ export default defineConfig({
     outDir: 'dist', 
     assetsDir: 'assets', 
     base: '/Portfolio/',
+    main: 'src/main.jsx',
   },
 });
