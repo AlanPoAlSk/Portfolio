@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import picture from '../assets/picture-DUozy57-.png';
+import picture from '../assets/picture.png';
 
 function AboutMeSection() {
     useEffect(() => {
