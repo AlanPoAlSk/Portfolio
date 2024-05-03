@@ -4,6 +4,14 @@ import { FaGithub } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import chatChit1 from '../assets/chat_chit/chat-chit1.png';
+import chatChit2 from '../assets/chat_chit/chat-chit2.png';
+import chatChit3 from '../assets/chat_chit/chat-chit3.png';
+import chatChit4 from '../assets/chat_chit/chat-chit4.png';
+import chatChit5 from '../assets/chat_chit/chat-chit5.png';
+import chatChit6 from '../assets/chat_chit/chat-chit6.png';
+import goodNeighborhood from '../assets/good_neighborhood.png';
+
 function ProjectsSection(){
 
         
@@ -14,15 +22,14 @@ function ProjectsSection(){
             technologies: ['React', 'Node.js', 'Socket.io'],
             githubLink: 'https://github.com/AlanPoAlSk/Real_Time_Chat.git',
             liveLink: 'http://18.218.163.199/',
-            images: ['src/assets/chat_chit/chat-chit1.png','src/assets/chat_chit/chat-chit2.png','src/assets/chat_chit/chat-chit3.png','src/assets/chat_chit/chat-chit4.png','src/assets/chat_chit/chat-chit5.png','src/assets/chat_chit/chat-chit6.png']
-        },
+            images: [chatChit1, chatChit2, chatChit3, chatChit4, chatChit5, chatChit6]        },
         {
             title: 'Good Neighborhood',
             description: 'Driven by a desire to enhance neighborhoods, developed an application where a user has the possibility to ask for help of any kind to other neighbors to forge connections and strengthen communities.',
             technologies: ['Java', 'Spring', 'Spring Security'],
             githubLink: 'https://github.com/AlanPoAlSk/Good_NeighborhooDC.git',
             // liveLink: 'https://your-live-version-link.com',
-            images: ['src/assets/good_neighborhood.png']
+            images: [goodNeighborhood]
         },
     ], []);
 

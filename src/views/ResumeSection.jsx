@@ -1,10 +1,12 @@
+import resume from '../assets/resume_Alan_Skrzecz_new.pdf';
+
 function ResumeSection(){
     return (
         <div className="resume-section">
             <div className="resume">
                 <div className="embed-container">
                     <iframe
-                        src="/src/assets/resume_Alan_Skrzecz_new.pdf#view=FitH"
+                        src={resume + '#view=FitH'}
                         type="application/pdf"
                         width="100%"
                         height="500px"

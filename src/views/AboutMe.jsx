@@ -19,7 +19,7 @@ function AboutMeSection() {
         <div className="about-me-section">
             <div className="matrix-container">
                 <div className="image-container">
-                    <img src="src/assets/picture.png" alt="picture" className="center-image"/>
+                    <img src="./picture.png" alt="picture" className="center-image"/>
                     <div>
                     <h2 style={{color:"whitesmoke", fontSize: "48px", fontWeight: "bold", margin: "5px 0"}}>Alan Skrzecz</h2>
                     <h4 style={{color:"whitesmoke", fontSize: "18px", fontStyle: "italic", margin: "25px"}}>- Software Developer -</h4>
