@@ -277,6 +277,10 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .project-card:hover {
