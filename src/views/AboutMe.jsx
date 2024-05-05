@@ -29,7 +29,7 @@ function AboutMeSection() {
                 </div>
                 {/* <h2 style={{color:"whitesmoke"}}>About Me</h2> */}
                 <div id="matrix-text" className="matrix-text">
-                I am a full stack developer, graduating from Coding Dojo. 
+                I am a full stack developer, graduated from Coding Dojo. 
                 Former Office Manager and Tax Professional, skilled in fiscal operations management, team leadership, and customer service. 
                 Thrived during Covid, achieving remarkable growth. 
                 Proficient in Italian, Spanish, and English. 
