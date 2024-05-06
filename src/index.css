@@ -355,17 +355,17 @@ a:hover {
   .portfolio-page {
     margin-top : 15vh;
     margin-left : 0vh;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
+    flex-direction: column;
+    align-items: flex-start; 
     height: auto; /
   }
   .sidebar {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity as needed */
-    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
   }
   .sidebar ul {
     display: flex;
@@ -374,15 +374,15 @@ a:hover {
     padding: 0;
   }
   .sidebar li {
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: small;
-    opacity: 0.7; /* Start with opacity 0 */
-    transform: translateY(5px); /* Start with translateY to push items down */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transition */
+    opacity: 0.7; 
+    transform: translateY(5px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .sidebar li.active {
-    opacity: 1; /* Show active item */
-    transform: translateY(0); /* Move active item back to original position */
+    opacity: 1; 
+    transform: translateY(0); 
   }
   .about-me-section,
   .projects-section,
@@ -390,8 +390,8 @@ a:hover {
   .resume-section,
   .contact-section {
     width: 700px;
-    margin: 0 auto; /* Center sections horizontally */
-    max-width: 100%; /* Set maximum width for sections */
+    margin: 0 auto; 
+    max-width: 100%; 
   }
   .skills-section {
     width: 100%;
@@ -403,9 +403,9 @@ a:hover {
   }
 
   .logos .logo-container {
-    width: 20%; /* Adjust width for mobile */
-    padding-top: 0; /* Set padding-top to maintain aspect ratio (1:1) */
-    margin: 2px; /* Adjust margin for spacing */
+    width: 20%;
+    padding-top: 0; 
+    margin: 2px;
   }
 
   .logos img {
@@ -415,9 +415,9 @@ a:hover {
     border-radius: 8px; 
   }
   .matrix-container {
-    width: 100%; /* Set the width to 90% of the viewport width */
-    max-width: 600px; /* Set a maximum width to prevent it from becoming too large */
-    margin: 0 auto; /* Center the matrix container horizontally */
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
   }
   .content {
     background-color: rgba(255, 255, 255, 0.882);
@@ -428,15 +428,15 @@ a:hover {
     margin-left: 20px;
     justify-content : center;
     border: 2px solid #0f0;
-    max-height: calc(100vh - 100px); /* Adjust the height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 100px); 
+    overflow-y: auto; 
   }
   .about-me-section h2 {
     font-size: 24px; 
   }
   
   .about-me-section h4 {
-    font-size: 12px; 
+    font-size: 10px; 
   }
   .image-container {
     display: flex;
@@ -453,8 +453,8 @@ a:hover {
 
   .text1 {
     overflow-y: auto;
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 0.8rem;
+    line-height: 2.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #0f0; 
   }
