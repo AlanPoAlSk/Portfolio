@@ -23,8 +23,8 @@ function AboutMeSection() {
                 <div className="image-container">
                     <img src={picture} alt="picture" className="center-image"/>
                     <div>
-                    <h2 style={{color:"whitesmoke", fontSize: "48px", fontWeight: "bold", margin: "5px 0"}}>Alan Skrzecz</h2>
-                    <h4 style={{color:"whitesmoke", fontSize: "18px", fontStyle: "italic", margin: "25px"}}>- Software Developer -</h4>
+                        <h2 className="about-me-title">Alan Skrzecz</h2>
+                        <h4 className="about-me-subtitle">- Software Developer -</h4>
                     </div>
                 </div>
                 {/* <h2 style={{color:"whitesmoke"}}>About Me</h2> */}

@@ -30,6 +30,20 @@ h3 {
   font-size:xx-large;
 }
 
+.about-me-title {
+  color: whitesmoke;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.about-me-subtitle {
+  color: whitesmoke;
+  font-size: 18px;
+  font-style: italic;
+  margin: 25px;
+}
+
 .portfolio-page {
   margin-top : 15vh;
   margin-left : 5vh;
@@ -137,11 +151,11 @@ li.active {
   background-color: #000;
 }
 
-.embed-container {
+.iframe-container {
   position: relative;
 }
 
-.embed-container iframe {
+.iframe-container iframe {
   margin-top: 4vh;
   margin-left: 0.9vw;
   height: 60vh;
@@ -149,7 +163,7 @@ li.active {
   transition: transform 0.8s ease;
 }
 
-.embed-container:hover iframe {
+.iframe-container:hover iframe {
   transform: scale(1.7);
   width: 100%;
   border: none;
@@ -335,4 +349,136 @@ a:hover {
   height: auto; 
   max-height: 300px; 
   object-fit: contain; 
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-page {
+    margin-top : 15vh;
+    margin-left : 0vh;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    height: auto; /
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity as needed */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  .sidebar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .sidebar li {
+    margin: 0 10px;
+    font-size: small;
+    opacity: 0.7; /* Start with opacity 0 */
+    transform: translateY(5px); /* Start with translateY to push items down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transition */
+  }
+  .sidebar li.active {
+    opacity: 1; /* Show active item */
+    transform: translateY(0); /* Move active item back to original position */
+  }
+  .about-me-section,
+  .projects-section,
+  .skills-section,
+  .resume-section,
+  .contact-section {
+    width: 700px;
+    margin: 0 auto; /* Center sections horizontally */
+    max-width: 100%; /* Set maximum width for sections */
+  }
+  .skills-section {
+    width: 100%;
+    background-color: black; 
+  }
+
+  .skills-section h2 {
+    margin-bottom:0 ;
+  }
+
+  .logos .logo-container {
+    width: 20%; /* Adjust width for mobile */
+    padding-top: 0; /* Set padding-top to maintain aspect ratio (1:1) */
+    margin: 2px; /* Adjust margin for spacing */
+  }
+
+  .logos img {
+    width: 70%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 8px; 
+  }
+  .matrix-container {
+    width: 100%; /* Set the width to 90% of the viewport width */
+    max-width: 600px; /* Set a maximum width to prevent it from becoming too large */
+    margin: 0 auto; /* Center the matrix container horizontally */
+  }
+  .content {
+    background-color: rgba(255, 255, 255, 0.882);
+    color: black;
+    backdrop-filter: blur(1px); 
+    border-radius: 10px; 
+    width: 90%;
+    margin-left: 20px;
+    justify-content : center;
+    border: 2px solid #0f0;
+    max-height: calc(100vh - 100px); /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .about-me-section h2 {
+    font-size: 24px; 
+  }
+  
+  .about-me-section h4 {
+    font-size: 12px; 
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh;
+  }
+  
+  .center-image {
+    max-width: 100%;
+    height: 20vh;
+    border-radius: 100px 100px;
+  }
+
+  .text1 {
+    overflow-y: auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0f0; 
+  }
+
+  .resume {
+    margin-left: 15px;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iframe-container iframe {
+    margin-top: 4vh;
+    margin-left: 0.9vw;
+    height: 60vh;
+    width: 78vw;
+    transition: transform 0.8s ease;
+  }
+
+  .resume h2 {
+    font-size: 1.1rem;
+  }
+
+  .resume a {
+    font-size: 1.1rem;
+  }
 }

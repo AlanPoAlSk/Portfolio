@@ -1,5 +1,3 @@
-// import './App.css'
-
 import { useState } from "react";
 import AboutMeSection from "./views/AboutMe";
 import NavigationSidebar from "./views/NavigationSidebar";
