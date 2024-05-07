@@ -58,7 +58,7 @@ h3 {
 .content-wrapper {
   display: flex;
   width: 100%;
-  height: 75vh;
+  height: 70vh;
   z-index: 1;
 }
 
@@ -361,9 +361,8 @@ a:hover {
   }
   .sidebar {
     position: fixed;
-    top: 50px;
-    left: 0;
-    width: 100%;
+    top: 90px;
+    left: 28px;
     background-color: rgba(0, 0, 0, 0.7); 
     z-index: 1000; 
   }
@@ -419,6 +418,19 @@ a:hover {
     max-width: 600px; 
     margin: 0 auto; 
   }
+
+  .matrix-text {
+    font-size: 16px;
+    color: #0f0;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: monospace;
+    line-height: 1.55;
+    overflow: auto;
+    max-height: 50vh;
+  }
+
   .content {
     background-color: rgba(255, 255, 255, 0.882);
     color: black;
