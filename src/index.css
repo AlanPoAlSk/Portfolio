@@ -361,10 +361,10 @@ a:hover {
   }
   .sidebar {
     position: fixed;
-    top: 90px;
+    top: 60px;
     left: 28px;
     background-color: rgba(0, 0, 0, 0.7); 
-    z-index: 1000; 
+    z-index: 10000; 
   }
   .sidebar ul {
     display: flex;
@@ -415,7 +415,7 @@ a:hover {
   }
   .matrix-container {
     width: 100%; 
-    max-width: 600px; 
+    max-width: 100%; 
     margin: 0 auto; 
   }
 
@@ -427,8 +427,12 @@ a:hover {
     margin-right: 10px;
     font-family: monospace;
     line-height: 1.55;
-    overflow: auto;
+    overflow: auto; 
     max-height: 50vh;
+  }
+  
+  .matrix-text span {
+    animation: fall 1s linear infinite;
   }
 
   .content {
