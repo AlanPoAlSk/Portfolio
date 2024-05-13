@@ -158,7 +158,7 @@ li.active {
 .iframe-container iframe {
   margin-top: 4vh;
   margin-left: 0.9vw;
-  height: 60vh;
+  height: 56vh;
   width: 38vw;
   transition: transform 0.8s ease;
 }
@@ -184,7 +184,7 @@ a:hover {
   right: 0;
   width: 100vw;
   max-width: 40vw;
-  height: 74.5vh;
+  height: 69.5vh;
   overflow: hidden;
   background-color: black;
 }
@@ -361,8 +361,9 @@ a:hover {
   }
   .sidebar {
     position: fixed;
-    top: 60px;
+    top: 40px;
     left: 28px;
+    height: 20px;
     background-color: rgba(0, 0, 0, 0.7); 
     z-index: 10000; 
   }
